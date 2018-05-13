@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//puto el que lo lea :v 
+//Hola amigos
 package vista;
 import controlador.Controlador_FRM_Principal;
 /**
