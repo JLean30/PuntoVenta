@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//bebes 
+
 package vista;
 import controlador.Controlador_FRM_Principal;
 /**
@@ -17,31 +17,22 @@ private Controlador_FRM_Principal controlador;
 /** Creates new form FRM_Principal */
     public FRM_Principal() {
         initComponents();
-        
-        
         this.controlador = new Controlador_FRM_Principal(this);
-         
         this.jmiSalir.addActionListener(controlador);
         this.jmiProductos.addActionListener(controlador);
-       
         //se asigna el controlador a cerrar sesion
-        this.jmi_CerrarSesion.addActionListener(controlador);
-        
+        this.jmi_CerrarSesion.addActionListener(controlador);        
         //se asigna el controlador al item menu formulario de usuarios
         this.jmiUsuarios.addActionListener(controlador);
         this.jmi_Facturacion.addActionListener(controlador);
         this.jmi_Proveedores.addActionListener(controlador);
         this.jmi_Clientes.addActionListener(controlador);
-        this.jmiBancoInformacion.addActionListener(controlador);
-        
-        
+        this.jmiBancoInformacion.addActionListener(controlador); 
         //se construye una instancia de interfaz login y recibe el contexto de principal
        // this.frmLogin = new FRM_Login(this);
         
-        //se muestra  la muestra  la interfaz de login
-       // this.frmLogin.setVisible(true);
-        
-        
+        //se muestra  la muestra  la interfaz de login blalla
+       // this.frmLogin.setVisible(true);  
     }
     
     public  void  CerrarSesion(){
