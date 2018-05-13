@@ -15,8 +15,8 @@ public class MetodosUsuarios {
     private   ArrayList<Usuario> usuarios;
     private String usuarioLogueo;
 
-    public   MetodosUsuarios(){
-        this.usuarios =new ArrayList<>();
+    public   MetodosUsuarios(ArrayList<Usuario> array){
+        this.usuarios =array;
        
         
     }

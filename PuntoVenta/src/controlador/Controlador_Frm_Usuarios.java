@@ -18,11 +18,12 @@ public class Controlador_Frm_Usuarios implements ActionListener {
 
     private FRM_Usuarios frmUsuarios;
     public MetodosUsuarios metodosUsuarios;
+    private RegistroUsuariosJSON archivoJSON;
 
     public Controlador_Frm_Usuarios (FRM_Usuarios pFrmUsuarios) {
-        
         this.frmUsuarios = pFrmUsuarios;
-        this.metodosUsuarios =new MetodosUsuarios();
+        this.archivoJSON=new RegistroUsuariosJSON();
+        this.metodosUsuarios =new MetodosUsuarios(this.archivoJSON.getLista());
     }
     
     @Override
@@ -122,6 +123,8 @@ public class Controlador_Frm_Usuarios implements ActionListener {
         }
     }
     public void consolidarInformacion(){
+        this.archivoJSON.setArray(this.metodosUsuarios.getUsuarios());
+        this.archivoJSON.escribirDatos();
         
     }
     

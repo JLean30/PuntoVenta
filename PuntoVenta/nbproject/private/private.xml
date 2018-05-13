@@ -3,23 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/RegistroClientesJSON.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/Controlador_Frm_Usuarios.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/vista/FRM_Clientes.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/Controlador_FRM_Clientes.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/MetodosProducto.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/Controlador_FRM_Principal.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/Controlador_FRM_Provedores.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/MetodosUsuarios.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/vista/FRM_Usuarios.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/Controlador_FRM_productos.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/MetodosProvedor.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/vista/FRM_Login.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/vista/FRM_Principal.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/vista/FRM_Productos.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/controlador/MetodosCliente.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/vista/FRM_Provedores.java</file>
-            <file>file:/D:/Programacion/Clase%2011%20con%20archivos/Nueva%20carpeta/PuntoVenta/src/modelo/Cliente.java</file>
+            <file>file:/C:/Users/JeanC/Documents/NetBeansProjects/PuntoVenta/PuntoVenta/src/controlador/RegistroUsuariosJSON.java</file>
+            <file>file:/C:/Users/JeanC/Documents/NetBeansProjects/PuntoVenta/PuntoVenta/src/modelo/Usuario.java</file>
+            <file>file:/C:/Users/JeanC/Documents/NetBeansProjects/PuntoVenta/PuntoVenta/src/controlador/Controlador_Frm_Usuarios.java</file>
+            <file>file:/C:/Users/JeanC/Documents/NetBeansProjects/PuntoVenta/PuntoVenta/src/controlador/MetodosUsuarios.java</file>
         </group>
     </open-files>
 </project-private>

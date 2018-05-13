@@ -5,13 +5,12 @@
  */
 package modelo;
 
-import java.io.Serializable;
 
 /**
  *
  * @author Estudiante
  */
-public class Usuario implements Serializable {
+public class Usuario {
     private  String usuario,contrasena,nombreCompleto,tipo;
     
     
@@ -42,6 +41,14 @@ public class Usuario implements Serializable {
         return  this.tipo;
     }
     //Contructo del usuario
+
+    public Usuario() {
+        this.usuario = "";
+        this.contrasena = "";
+        this.nombreCompleto = "";
+        this.tipo = "";
+    }
+    
     public  Usuario(String pUsuario,String pContrasena,
             String pNombCompl,String pTipo){
         
@@ -56,6 +63,5 @@ public class Usuario implements Serializable {
         this.setNombreCompleto(usr.getNombreCompleto());
         this.setTipo(usr.getTipo());
     }
-    
     
 }

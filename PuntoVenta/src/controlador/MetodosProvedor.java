@@ -15,9 +15,9 @@ public class MetodosProvedor {
     //Declarar ArrayList
     private ArrayList<Provedor> provedor;
 
-    public MetodosProvedor() {
+    public MetodosProvedor(ArrayList<Provedor> array) {
         //Instanciar ArrayList
-        this.provedor = new ArrayList<>();
+        this.provedor = array;
     }
     //Metodo de agregar objeto al ArrayList
     public void agregar(Provedor pProv){

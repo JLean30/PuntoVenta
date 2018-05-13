@@ -17,7 +17,7 @@ public class Controlador_FRM_productos implements ActionListener {
 
     private FRM_Productos frmProductos;
     public MetodosProducto  metodosProductos;
-
+    private RegistroProductoJSON archivoJSON;
     
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -74,13 +74,14 @@ public class Controlador_FRM_productos implements ActionListener {
     }
     
     public void consolidarInformacion(){
-        
+        this.archivoJSON.setArray(this.metodosProductos.getArray());
+        this.archivoJSON.escribirDatos();
     }
     
     public Controlador_FRM_productos(FRM_Productos frm){
         this.frmProductos=frm;
-
-        this.metodosProductos = new MetodosProducto();
+        this.archivoJSON=new RegistroProductoJSON();
+        this.metodosProductos = new MetodosProducto(this.archivoJSON.getLista());
     }
     
     

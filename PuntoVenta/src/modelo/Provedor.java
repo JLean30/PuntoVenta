@@ -5,13 +5,12 @@
                  */
                    package modelo;
 
-                    import java.io.Serializable;
 
                     /**
                      *
                      * @author JeanC
                      */
-                        public class Provedor implements Serializable {
+                           public class Provedor  {
 
                             private String cedulaJuridica,nombreComercial,contacto,direccion,moneda,montoCredito;
                             private double diasCredito;
@@ -86,6 +85,16 @@
                                 this.setMontoCredito(pMontoCred);
                                 this.setDiasCredito(pDias);
                                 this.setMoneda(pMoneda);
+                            }
+                            
+                            public Provedor(){
+                                this.cedulaJuridica="";
+                                this.nombreComercial="";
+                                this.contacto="";
+                                this.direccion="";
+                                this.montoCredito="";
+                                this.diasCredito=0.0;
+                                this.moneda="";
                             }
                         }
                     

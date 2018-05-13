@@ -15,8 +15,8 @@ import java.util.ArrayList;
 public class MetodosProducto {
     private ArrayList<Producto> productos;
     
-    public MetodosProducto(){
-        this.productos = new ArrayList<>();
+    public MetodosProducto(ArrayList <Producto> array){
+        this.productos =array;
     }
     
     public void agregar(Producto pProduc){

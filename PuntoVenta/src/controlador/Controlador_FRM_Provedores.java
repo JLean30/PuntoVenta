@@ -17,7 +17,7 @@ import java.awt.event.ActionListener;
 public class Controlador_FRM_Provedores implements ActionListener{
     
     private  FRM_Provedores frmProvedores;
-    
+    private RegistroProveedorJSON archivoJSON;
     public  MetodosProvedor metodosProvedor;
 
     
@@ -124,12 +124,13 @@ public class Controlador_FRM_Provedores implements ActionListener{
     }
     
     public void consolidarInformacion(){
-        
+        this.archivoJSON.setArray(this.metodosProvedor.getArray());
+        this.archivoJSON.escribirDatos();
     }
     public Controlador_FRM_Provedores(FRM_Provedores frm){//frm es la interfaz
             this.frmProvedores = frm;
-
-            this.metodosProvedor=new MetodosProvedor();
+            this.archivoJSON=new RegistroProveedorJSON();
+            this.metodosProvedor=new MetodosProvedor(this.archivoJSON.getLista());
             
 
         }

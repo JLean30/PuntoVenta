@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author Melber
  */
-public final class Producto implements Serializable{
+    public class Producto {
     //Atributos
     private String codigo,descripcion,fechaRegistro;
 
@@ -76,6 +76,15 @@ public Producto(String pCod,String pDescrip,double pPrecioComp,
    this.setPorImpuesto(pPorImp);
    this.setFechaRegistro(pfechaReg);
 }
+    public Producto() {
+        this.codigo = "";
+        this.descripcion = "";
+        this.fechaRegistro = "";
+        this.precioCompra = 0.0;
+        this.porDescuento = 0.0;
+        this.porImpuesto = 0.0;
+    }
+
     
     
     
