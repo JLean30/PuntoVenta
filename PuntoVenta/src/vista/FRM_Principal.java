@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+//puto el que lo lea :v 
 package vista;
 import controlador.Controlador_FRM_Principal;
 /**
@@ -14,11 +14,7 @@ public class FRM_Principal extends javax.swing.JFrame {
     
 private Controlador_FRM_Principal controlador;
 
-
-
-
-
-    /** Creates new form FRM_Principal */
+/** Creates new form FRM_Principal */
     public FRM_Principal() {
         initComponents();
         
@@ -100,7 +96,6 @@ private Controlador_FRM_Principal controlador;
         setTitle("Sistema de Facturación");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Fondo.jpg"))); // NOI18N
-        jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
