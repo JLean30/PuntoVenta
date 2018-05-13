@@ -20,6 +20,8 @@ import java.io.FileWriter;
  *
  * @author JeanC
  */
+
+//clase JSON para Clientes 
 public class RegistroClientesJSON {
     private ArrayList<Cliente> clientes;
     
