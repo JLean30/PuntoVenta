@@ -74,7 +74,7 @@ public class RegistroClientesJSON {
     public void escribirDatos(){
         JSONObject clienteJSON=new JSONObject();
         JSONArray arrayJSON=new JSONArray();
-        if(this.clientes.size()>0){
+      
         for(Cliente item:this.clientes){
             JSONObject jsonObj=new JSONObject();
             
@@ -96,7 +96,7 @@ public class RegistroClientesJSON {
         }catch(IOException ex){
             
         }
-        }
+        
     }
     
     public ArrayList<Cliente> getLista(){

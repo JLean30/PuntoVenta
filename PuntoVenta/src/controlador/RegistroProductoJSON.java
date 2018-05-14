@@ -73,7 +73,7 @@ public class RegistroProductoJSON {
     public void escribirDatos(){
         JSONObject productoJSON=new JSONObject();
         JSONArray arrayJSON=new JSONArray();
-        if(this.productos.size()>0){
+  
         for(Producto item:this.productos){
             JSONObject jsonObj=new JSONObject();
             
@@ -95,7 +95,7 @@ public class RegistroProductoJSON {
         }catch(IOException ex){
             
         }
-        }
+        
     }
     
     public ArrayList<Producto> getLista(){

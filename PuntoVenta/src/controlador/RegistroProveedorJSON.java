@@ -72,7 +72,7 @@ public class RegistroProveedorJSON {
     public void escribirDatos(){
         JSONObject proveedorJSON=new JSONObject();
         JSONArray arrayJSON=new JSONArray();
-        if(this.proveedores.size()>0){
+    
         for(Provedor item:this.proveedores){
             JSONObject jsonObj=new JSONObject();
             
@@ -95,7 +95,7 @@ public class RegistroProveedorJSON {
         }catch(IOException ex){
             
         }
-        }
+        
     }
     
     public ArrayList<Provedor> getLista(){

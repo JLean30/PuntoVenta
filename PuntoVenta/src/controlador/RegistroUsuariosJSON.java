@@ -71,7 +71,7 @@ public class RegistroUsuariosJSON {
     public void escribirDatos(){
         JSONObject usuarioJSON=new JSONObject();
         JSONArray arrayJSON=new JSONArray();
-        if(this.usuarios.size()>0){
+        
         for(Usuario item:this.usuarios){
             JSONObject jsonObj=new JSONObject();
             
@@ -91,7 +91,7 @@ public class RegistroUsuariosJSON {
         }catch(IOException ex){
             
         }
-        }
+        
     }
     
     public ArrayList<Usuario> getLista(){
