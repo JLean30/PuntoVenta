@@ -27,7 +27,7 @@ private Controlador_FRM_Principal controlador;
         this.jmi_Facturacion.addActionListener(controlador);
         this.jmi_Proveedores.addActionListener(controlador);
         this.jmi_Clientes.addActionListener(controlador);
-        this.jmiBancoInformacion.addActionListener(controlador); 
+  
         //se construye una instancia de interfaz login y recibe el contexto de principal
        // this.frmLogin = new FRM_Login(this);
         
@@ -57,11 +57,10 @@ private Controlador_FRM_Principal controlador;
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jmi_Archivo = new javax.swing.JMenu();
-        jmiBancoInformacion = new javax.swing.JMenuItem();
         jmi_CerrarSesion = new javax.swing.JMenuItem();
         jmiSalir = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
@@ -85,39 +84,28 @@ private Controlador_FRM_Principal controlador;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Facturación");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Fondo.jpg"))); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Punto Venta");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 240, 260, 90));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/ecommerce-1170x780.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 650));
 
-        jMenuBar1.setBackground(new java.awt.Color(0, 102, 102));
+        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuBar1.setForeground(new java.awt.Color(0, 153, 153));
         jMenuBar1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
 
         jmi_Archivo.setBackground(new java.awt.Color(0, 102, 102));
+        jmi_Archivo.setForeground(new java.awt.Color(0, 102, 204));
         jmi_Archivo.setText("Archivo");
         jmi_Archivo.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
 
-        jmiBancoInformacion.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jmiBancoInformacion.setText("Banco de Información");
-        jmiBancoInformacion.setActionCommand("BancoInformacion");
-        jmi_Archivo.add(jmiBancoInformacion);
-
         jmi_CerrarSesion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         jmi_CerrarSesion.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jmi_CerrarSesion.setForeground(new java.awt.Color(0, 51, 153));
         jmi_CerrarSesion.setText("Cerrar Sesión");
         jmi_CerrarSesion.setActionCommand("CerrarSesion");
         jmi_CerrarSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -128,30 +116,38 @@ private Controlador_FRM_Principal controlador;
         jmi_Archivo.add(jmi_CerrarSesion);
 
         jmiSalir.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jmiSalir.setForeground(new java.awt.Color(0, 51, 153));
         jmiSalir.setText("Salir");
         jmi_Archivo.add(jmiSalir);
 
         jMenuBar1.add(jmi_Archivo);
 
         jMenu4.setBackground(new java.awt.Color(0, 102, 102));
+        jMenu4.setForeground(new java.awt.Color(0, 102, 204));
         jMenu4.setText("Catálogos");
         jMenu4.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
 
         jmiProductos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
         jmiProductos.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jmiProductos.setForeground(new java.awt.Color(0, 51, 153));
         jmiProductos.setText("Productos");
         jMenu4.add(jmiProductos);
 
         jmiUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_MASK));
         jmiUsuarios.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jmiUsuarios.setForeground(new java.awt.Color(0, 51, 153));
         jmiUsuarios.setText("Perfiles de Usuarios");
         jMenu4.add(jmiUsuarios);
 
+        jmi_Clientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         jmi_Clientes.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jmi_Clientes.setForeground(new java.awt.Color(0, 51, 153));
         jmi_Clientes.setText("Clientes");
         jMenu4.add(jmi_Clientes);
 
+        jmi_Proveedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.SHIFT_MASK));
         jmi_Proveedores.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jmi_Proveedores.setForeground(new java.awt.Color(0, 51, 153));
         jmi_Proveedores.setText("Proveedores");
         jmi_Proveedores.setActionCommand("Provedores");
         jMenu4.add(jmi_Proveedores);
@@ -159,14 +155,18 @@ private Controlador_FRM_Principal controlador;
         jMenuBar1.add(jMenu4);
 
         jMenu5.setBackground(new java.awt.Color(0, 102, 102));
+        jMenu5.setForeground(new java.awt.Color(0, 102, 204));
         jMenu5.setText("Consultas");
         jMenu5.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         jMenuBar1.add(jMenu5);
 
+        jMenu7.setForeground(new java.awt.Color(0, 102, 204));
         jMenu7.setText("Procesos");
         jMenu7.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
 
-        jmi_Facturacion.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jmi_Facturacion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.ALT_MASK));
+        jmi_Facturacion.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jmi_Facturacion.setForeground(new java.awt.Color(0, 51, 153));
         jmi_Facturacion.setText("Facturación");
         jmi_Facturacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,23 +178,6 @@ private Controlador_FRM_Principal controlador;
         jMenuBar1.add(jMenu7);
 
         setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -243,7 +226,8 @@ private Controlador_FRM_Principal controlador;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -253,8 +237,6 @@ private Controlador_FRM_Principal controlador;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JMenuItem jmiBancoInformacion;
     private javax.swing.JMenuItem jmiProductos;
     private javax.swing.JMenuItem jmiSalir;
     private javax.swing.JMenuItem jmiUsuarios;

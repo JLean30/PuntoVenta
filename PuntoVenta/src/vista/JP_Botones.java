@@ -97,6 +97,11 @@ public class JP_Botones extends javax.swing.JPanel {
         btnConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Consultar.png"))); // NOI18N
         btnConsultar.setToolTipText("Consultar");
         btnConsultar.setActionCommand("Buscar");
+        btnConsultar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultarActionPerformed(evt);
+            }
+        });
 
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Registrar.png"))); // NOI18N
         btnRegistrar.setToolTipText("Registrar");
@@ -149,6 +154,10 @@ public class JP_Botones extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnConsultarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
